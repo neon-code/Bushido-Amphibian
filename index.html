@@ -21,178 +21,136 @@ img {margin-bottom: -8px;}
 <!-- Navbar -->
 <div class="w3-top">
     <div class="w3-bar w3-theme-d2 w3-left-align">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-green"><img src="Logo w bg.png" style="width: 20px;"/></a>
+     <a href="#trailer" class="w3-bar-item w3-button w3-hide-small w3-hover-green">Trailer</a>
+     <a href="#game" class="w3-bar-item w3-button w3-hide-small w3-hover-green">The Game</a>
+     <a href="#features" class="w3-bar-item w3-button w3-hide-small w3-hover-green">Features</a>
      <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-green">Team</a>
-     <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-green">Work</a>
-     <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-green">Price</a>
-     <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-green">Contact</a>
     </div>
    
-     <!-- Navbar on small screens -->
-     <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-       <a href="#team" class="w3-bar-item w3-button">Team</a>
-       <a href="#work" class="w3-bar-item w3-button">Work</a>
-       <a href="#pricing" class="w3-bar-item w3-button">Price</a>
-       <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-     </div>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#trailer" class="w3-bar-item w3-button">Trailer</a>
+    <a href="#game" class="w3-bar-item w3-button">The Game</a>
+    <a href="#features" class="w3-bar-item w3-button">Features</a>
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+  </div>
 </div>
 
 <!-- Lander-->
 <header>
-    <img class="w3-image" src="https://raw.githubusercontent.com/neon-code/Bushido-Amphibian/main/lander.png" style="min-width:500px">
+    <img class="w3-image" src="lander.png" style="min-width:500px">
 </header>
 
 <!-- The Game Section -->
-<div class="w3-padding-64 w3-center" style="background-color: #3e2723;">
-    <div style="max-width:800px; margin-left: auto; margin-right: auto;">
+<div class="w3-padding-64 w3-center" style="background-color: #3e2723;" id="game">
+    <div style="max-width:980px; margin-left: auto; margin-right: auto; padding: 30px;">
       <h1 class="w3-jumbo w3-text-white"><b>The Game</b></h1>
       <h1 class="w3-xxxlarge w3-text-green"><b>Why play it?</b></h1>
-      <p class="w3-text-white">You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <p class="w3-text-white">Defeat enemies as Frog Samurai with your sword, stick to walls and ceilings, and unlock new abilities as you fight!<br>
+        Discover various environments with unique scenery and take on the natural enemies of the frog. <br>
+        Use your tongue as a hook to fly around the world, and use your innate stickiness to stick to walls!<br>
+        The combination of setting, music, fluid and fast-paced gameplay pack a punch.
+      </p>
       
-        <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small">
+        <button class="w3-button w3-light-grey w3-padding-large w3-section">
         <i class="fa fa-windows w3-xlarge w3-text-blue"></i> Download now!
       </button>
       </div>
 </div>
 
 
-
 <!-- Features Section -->
-<div class="w3-container w3-padding-64 w3-dark-grey w3-center">
-    <h1 class="w3-jumbo"><b>Features</b></h1>
-    <p>This app is just so lorem ipsum.</p>
+<div class="w3-container w3-padding-64 w3-dark-grey w3-center" id="features">
+    <h1 class="w3-jumbo" style="padding-bottom: 60px;"><b>Features</b></h1>
   
-    <div class="w3-row" style="margin-top:64px">
-      <div class="w3-col s3">
-        <i class="fa fa-bolt w3-text-orange w3-jumbo"></i>
-        <p>Fast</p>
+    <div class="w3-row">
+      <div class="w3-quarter" style="margin-bottom:64px; padding: 20px;">
+        <img src="JpnIcon.png" style="max-width: 100px";/>
+        <p>Setting in ancient Japan</p>
       </div>
-      <div class="w3-col s3">
-        <i class="fa fa-heart w3-text-red w3-jumbo"></i>
-        <p>Loved</p>
+      <div class="w3-quarter" style="margin-bottom:64px; padding: 20px;">
+        <img src="tongue.png" style="max-width: 100px"/>
+        <p>Frog tongue dynamics</p>
       </div>
-      <div class="w3-col s3">
-        <i class="fa fa-camera w3-text-yellow w3-jumbo"></i>
-        <p>Clarity</p>
+      <div class="w3-quarter" style="margin-bottom:64px; padding: 20px;">
+        <img src="walls.png" style="max-width: 100px"/>
+        <p>Stick to walls</p>
       </div>
-      <div class="w3-col s3">
-        <i class="fa fa-battery-full w3-text-green w3-jumbo"></i>
-        <p>Power</p>
+      <div class="w3-quarter" style="padding: 20px;">
+        <img src="bolt.png" style="max-width: 100px"/>
+        <p>Fast gameplay</p>
       </div>
     </div>
   
-    <div class="w3-row" style="margin-top:64px">
-      <div class="w3-col s3">
-        <i class="fa fa-diamond w3-text-white w3-jumbo"></i>
-        <p>Sharp</p>
-      </div>
-      <div class="w3-col s3">
-        <i class="fa fa-cloud w3-text-blue w3-jumbo"></i>
-        <p>Cloud</p>
-      </div>
-      <div class="w3-col s3">
-        <i class="fa fa-globe w3-text-amber w3-jumbo"></i>
-        <p>Global</p>
-      </div>
-      <div class="w3-col s3">
-        <i class="fa fa-hdd-o w3-text-cyan w3-jumbo"></i>
-        <p>Storage</p>
-      </div>
-    </div>
-    
-    <div class="w3-row" style="margin-top:64px">
-      <div class="w3-col s3">
-        <i class="fa fa-user w3-text-sand w3-jumbo"></i>
-        <p>Safe</p>
-      </div>
-      <div class="w3-col s3">
-        <i class="fa fa-shield w3-text-orange w3-jumbo"></i>
-        <p>Stabile</p>
-      </div>
-      <div class="w3-col s3">
-        <i class="fa fa-wifi w3-text-grey w3-jumbo"></i>
-        <p>Connected</p>
-      </div>
-      <div class="w3-col s3">
-        <i class="fa fa-image w3-text-pink w3-jumbo"></i>
-        <p>HD</p>
-      </div>
-    </div>
+  </div>
   </div>
 
-  <!-- Team Container -->
-  <div class="w3-container w3-padding-64 w3-center" id="team">
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
   <h2>OUR TEAM</h2>
-  <p>Meet the team - our office rats:</p>
+  <p>Meet the team - our creative bunch:</p>
   
   <div class="w3-row"><br>
   
-  <div class="w3-quarter">
-    <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-    <h3>Johnny Walker</h3>
-    <p>Web Designer</p>
+  <div class="w3-quarter" style="margin-bottom:64px">
+    <img src="chenhao.jpg" alt="Boss" style="width:45%;" class="w3-circle w3-hover-opacity">
+    <h3>Chenhao Li</h3>
+    <p>Level Designer</p>
+  </div>
+  
+  <div class="w3-quarter" style="margin-bottom:64px">
+    <img src="love.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Love Wessman</h3>
+    <p>Programmer</p>
+  </div>
+  
+  <div class="w3-quarter" style="margin-bottom:64px">
+    <img src="robert.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Robert Bråtfors</h3>
+    <p>Programmer</p>
   </div>
   
   <div class="w3-quarter">
-    <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-    <h3>Rebecca Flex</h3>
-    <p>Support</p>
-  </div>
-  
-  <div class="w3-quarter">
-    <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-    <h3>Jan Ringo</h3>
-    <p>Boss man</p>
-  </div>
-  
-  <div class="w3-quarter">
-    <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-    <h3>Kai Ringo</h3>
-    <p>Fixer</p>
+    <img src="Siddharth.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Siddharth Mishra</h3>
+    <p>Assets & Web Dev</p>
   </div>
   
   </div>
   </div>
 
-
+  
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
-  <div class="w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p class="w3-medium w3-hover-text-green">Made with ❤ at KTH Stockholm</p>
 </footer>
 
 
 <script>
-    // Script for side navigation
-    function w3_open() {
-      var x = document.getElementById("mySidebar");
-      x.style.width = "300px";
-      x.style.paddingTop = "10%";
-      x.style.display = "block";
-    }
-    
-    // Close side navigation
-    function w3_close() {
-      document.getElementById("mySidebar").style.display = "none";
-    }
-    
-    // Used to toggle the menu on smaller screens when clicking on the menu button
-    function openNav() {
-      var x = document.getElementById("navDemo");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else { 
-        x.className = x.className.replace(" w3-show", "");
-      }
-    }
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
     </script>
     
 
