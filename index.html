@@ -1,0 +1,227 @@
+<html>
+<title>Bushido Amphibian</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+<style>
+  * {
+    scroll-behavior: smooth;
+  }
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Poppins", sans-serif
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  section {
+    position: relative;
+    height: calc(9 * 100vw / 16);
+    max-height: 1440px;
+    z-index: -10;
+    overflow-y: hidden;
+  }
+
+  section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: calc(100px * 100vw / 1920);
+    max-height: 100px;
+    background: linear-gradient(to top, #3e2723, transparent);
+    z-index: 1000;
+  }
+
+  section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    padding-top: 30px;
+    pointer-events: none;
+  }
+
+  img {
+    margin-bottom: -8px;
+  }
+
+  .mySlides {
+    display: none;
+  }
+</style>
+
+
+<body style="max-width:100vw;">
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme-d2">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-hover-white w3-right" href="javascript:void(0);"
+        onclick="openNav()"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-green"><img src="logowhite.png"
+          style="width: 240px; margin-bottom: 0px;" /></a>
+
+      <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-green w3-right">Team</a>
+      <a href="#features" class="w3-bar-item w3-button w3-hide-small w3-hover-green w3-right">Features</a>
+      <a href="#game" class="w3-bar-item w3-button w3-hide-small w3-hover-green w3-right">The Game</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+      <a href="#game" class="w3-bar-item w3-button">The Game</a>
+      <a href="#features" class="w3-bar-item w3-button">Features</a>
+      <a href="#team" class="w3-bar-item w3-button">Team</a>
+    </div>
+  </div>
+
+  <!-- Lander with parallax-->
+  <section>
+    <img src="https://raw.githubusercontent.com/neon-code/Bushido-Amphibian/main/Parallax/bg.png" id="background">
+    <img src="https://raw.githubusercontent.com/neon-code/Bushido-Amphibian/main/Parallax/logo.png" id="logo">
+    <img src="https://raw.githubusercontent.com/neon-code/Bushido-Amphibian/main/Parallax/fuji.png" id="fuji">
+    <img src="https://raw.githubusercontent.com/neon-code/Bushido-Amphibian/main/Parallax/forest.png" id="forest">
+    <img src="https://raw.githubusercontent.com/neon-code/Bushido-Amphibian/main/Parallax/land.png" id="land">
+  </section>
+
+  <!-- The Game Section -->
+  <div class="w3-padding-64 w3-center" style="background-color: #3e2723;" id="game">
+    <div style="max-width:980px; margin-left: auto; margin-right: auto; padding: 30px;">
+      <h1 class="w3-jumbo w3-text-white"><b>The Game</b></h1>
+      <h1 class="w3-xxxlarge w3-text-green"><b>Why play it?</b></h1>
+      <p class="w3-text-white">Defeat enemies as Frog Samurai with your sword, stick to walls and ceilings, and unlock
+        new abilities as you fight!<br>
+        Discover various environments with unique scenery and take on the natural enemies of the frog. <br>
+        Use your tongue as a hook to fly around the world, and use your innate stickiness to stick to walls!<br>
+        The combination of setting, music, fluid and fast-paced gameplay pack a punch.
+      </p>
+
+      <a href="https://github.com/neon-code/Bushido-Amphibian/raw/main/BushidoAmphibianDemo.zip" download>
+        <button class="w3-button w3-light-grey w3-padding-large w3-section">
+          <i class="fa fa-windows w3-xlarge w3-text-blue"></i> Download now!
+        </button>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- Features Section -->
+  <div class="w3-container w3-padding-64 w3-center" id="features" style="background-color: #291b16;">
+    <h1 class="w3-jumbo w3-text-green" style="padding-bottom: 60px;"><b>Features</b></h1>
+
+    <div class="w3-row">
+      <div class="w3-quarter w3-text-white" style="margin-bottom:64px; padding: 20px;">
+        <img src="Features/JpnIcon.png" style="max-width: 100px" ; />
+        <p>Setting in ancient Japan</p>
+      </div>
+      <div class="w3-quarter w3-text-white" style="margin-bottom:64px; padding: 20px;">
+        <img src="Features/tongue.png" style="max-width: 100px" />
+        <p>Frog tongue dynamics</p>
+      </div>
+      <div class="w3-quarter w3-text-white" style="margin-bottom:64px; padding: 20px;">
+        <img src="Features/walls.png" style="max-width: 100px" />
+        <p>Stick to walls</p>
+      </div>
+      <div class="w3-quarter w3-text-white" style="padding: 20px;">
+        <img src="Features/bolt.png" style="max-width: 100px" />
+        <p>Fast gameplay</p>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <!-- Team Container -->
+  <div class="w3-container w3-padding-64 w3-center w3-black" id="team">
+    <h2 class="w3-text-green">OUR TEAM</h2>
+    <p>Meet the team - our creative bunch:</p>
+
+    <div class="w3-row"><br>
+
+      <div class="w3-quarter" style="margin-bottom:64px">
+        <img src="Us/chenhao.jpg" alt="Boss" style="width:45%;" class="w3-circle w3-hover-opacity">
+        <h3>Chenhao Li</h3>
+        <p>Level Designer</p>
+      </div>
+
+      <div class="w3-quarter" style="margin-bottom:64px">
+        <img src="Us/love.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+        <h3>Love Wessman</h3>
+        <p>Programmer</p>
+      </div>
+
+      <div class="w3-quarter" style="margin-bottom:64px">
+        <img src="Us/robert.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+        <h3>Robert Bråtfors</h3>
+        <p>Programmer</p>
+      </div>
+
+      <div class="w3-quarter">
+        <img src="Us/Siddharth.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+        <h3>Siddharth Mishra</h3>
+        <p>Assets & Web Dev</p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey w3-center w3-xlarge">
+    <p class="w3-medium w3-hover-text-green">Made with ❤ at KTH Stockholm</p>
+  </footer>
+
+
+  <script>
+    //Script for Parallax
+    let logo = document.getElementById('logo');
+    let fuji = document.getElementById('fuji');
+    let forest = document.getElementById('forest');
+
+    window.addEventListener('scroll', function () {
+      let value = window.scrollY;
+      logo.style.top = value + 'px';
+      fuji.style.top = value * 0.7 + 'px';
+      forest.style.top = value * 0.4 + 'px';
+    })
+
+    // Script for side navigation
+    function w3_open() {
+      var x = document.getElementById("mySidebar");
+      x.style.width = "200px";
+      x.style.paddingTop = "10%";
+      x.style.display = "block";
+    }
+
+    // Close side navigation
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+
+    // Used to toggle the menu on smaller screens when clicking on the menu button
+    function openNav() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+
+
+</body>
+
+</html>
